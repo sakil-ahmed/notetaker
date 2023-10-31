@@ -10,7 +10,7 @@ import {NoteCard} from "@/components/note/NoteCard";
 
 
 export default function Home() {
-
+    const {data: sessionData} = useSession()
     return (
         <>
             <Head>
@@ -20,7 +20,8 @@ export default function Home() {
             </Head>
             <main className="bg-white w-full h-screen">
                 <Header/>
-                <Content/>
+                {sessionData?.user === undefined ? "" : <Content/>}
+
             </main>
         </>
     );
