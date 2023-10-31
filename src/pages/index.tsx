@@ -20,7 +20,7 @@ export default function Home() {
             </Head>
             <main className="bg-white w-full h-screen">
                 <Header/>
-                {sessionData?.user === undefined ? "" : <Content/>}
+                {sessionData?.user === undefined ? <h1>Sign In to continue...</h1> : <Content/>}
 
             </main>
         </>
