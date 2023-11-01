@@ -19,7 +19,7 @@ export const NoteEditor = (
                     <input
                         type='text'
                         placeholder='note title'
-                        className='input-primary input input-lg w-full font-bold'
+                        className='input-primary input input-lg w-full text-white font-bold'
                         value={title}
                         onChange={(e) => setTitle(e.currentTarget.value)}
                     />

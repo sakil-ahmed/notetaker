@@ -5,4 +5,11 @@
 *::-webkit-scrollbar{
     display: none;
 }
+body{
+   @apply bg-white text-black
+}
+.scroll-body{
+    height: calc(100vh - 90px) !important;
+    overflow: auto;
 
+}

@@ -10,7 +10,7 @@ export const NoteCard = (
 
     const [isExpanded, setIsExpanded] = useState<boolean>(true);
     return <>
-        <div className="card mt-5 border border-gray-200 bg-base-100 shadow-xl">
+        <div className="card mt-5 border border-gray-200 bg-white shadow-xl">
             <div className="card-body m-0 p-3">
                 <div
                     className={`collapse-arrow ${
@@ -18,7 +18,7 @@ export const NoteCard = (
                     } collapse`}
                     onClick={() => setIsExpanded(!isExpanded)}
                 >
-                    <div className="collapse-title text-xl font-bold">{note.title}</div>
+                    <div className="collapse-title flex items-center justify-between text-xl font-bold text-black">{note.title} <span>...</span></div>
                     <div className="collapse-content">
                         <article className="prose lg:prose-xl">
                             <ReactMarkdown>{note.content}</ReactMarkdown>
